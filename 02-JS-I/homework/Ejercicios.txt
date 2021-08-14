@@ -1,0 +1,134 @@
+VARIABLE: 
+- objeto de js donde se pueden almacenar valores que pueden ser invocados
+- su estructura es var NombreVariable = "valor" ;
+- se declara con var , let o cons (esta no puede ser modificada)
+
+CONSOLE.LOG: 
+- Muestra valores en consola
+- NO PUEDE MOSTRAR VARIABLES NO DECLARADAS
+- Su estructura es console.log(); , ejemplo: console.log(NombreVariable);
+- LEE EN ORDEN, LINEA POR LINEA DE ARRIBA A ABAJO
+
+TIPOS DE DATOS:
+STRINGS: Cadenas de caracteres/datos, siempre estan entre las comillas.
+NUMERS: Pueden ser decimales, enteros , negativos, siempre van sin comillas.
+BOOLEAN: TRUE , FALSE, son palabras reservadas, no llevan comillas.
+
+OPERACIONES MATEMATICAS:
+Suma:2+2 = 4
+Resta:2-2 = 0
+division:2/2 = 1
+multiplicacion:2 * 2 = 4
+
+Módulo:21 % 5 = 1 ( SE QUEDA CON EL RESTO DE UNA DIVISION, SOLO TRABAJA NUMEROS ENTEROS)
+
+FUNCIONES:
+  
+ SINTAXIS: 
+  TIPICA: function nombrefuncion(){codigo}
+  CONST: const nombrefuncion2 = function (){codigo}
+  ARROW: const nombrefuncion3 = () => {}
+
+!!!LOS PUNTO Y COMA AL FINAL DE LAS LLAVES SON OPCIONALES PERO RECOMENDABLES!!!
+
+ EJECUCION: 
+  nombrefuncion()
+
+ ARGUMENTOS:
+ - Valores que se le asignan a la funcion (entre los parentesis) para que esta los reciba en el código.
+
+  ESTRUCTURA:
+   -function nombrefuncion(VALOR){
+       console.log("hola" + VALOR);
+    }
+
+  EJECUCION:
+
+      Saluda("kuyosama")
+
+      Hola kuyosama
+
+ *Las funciones pueden recibir más de un VALOR , siempre separando los valores por , y un espacio.
+
+    ejemplo:  
+
+         function suma(a, b) {
+           console.log( a + b);
+          }
+
+        suma(3, 5)
+
+         8
+
+  FUNCION-RETURN:
+     
+    DIFERENCIA CON console.log:
+     -Hace que la funcion DEVUELVA un valor, es lo que queremos atrapar de la función.
+      // console.log IMPRIME en consola lo que queremos que nos muestre.
+
+    ESTRUCTURA:
+        function nombreApellido (nombre, apellido) {
+    return nombre + " " + apellido;   **argumento1 concatenado a argumento2 (nombre y apellido)
+    }
+
+   EJECUCION:
+
+    nombreApellido(Lucas, Jose)
+
+    !!!TAMBIEN SE PUEDEN GUARDAR LAS FUNCIONES EN VARIABLES!!!
+
+  CONTROL DE FLUJO Y OPERADORES DE COMPARACION:
+   -Es una forma de que nuestra funcion verifique si algo es true or false
+   
+     function puedeManejar(edad) {
+      if (edad > 18) {
+         return true;
+        }
+
+       return false;
+   }
+      **si no se cumple el IF el código se omite y returna false**
+
+  OPERADORES DE COMPARACION:
+      -menor < menor o igual <=
+      -mayor > mayor o igual >=
+      -igual(comparacion estricta) ===
+      -!== diferente?
+
+  ELSE:
+    -Sirve para encadenar condiciones
+       IF{}> ELSE IF{} > ELSE{}.
+ 
+  OPERADORES:
+
+    &&: and (sirve para añadir otra condicion)
+    ||: or (puede cumplirse la otra condicion O (la siguiente a especificar, this OR that)
+
+OBJETOS GLOBALES Y METODOS:
+  -JS tiene objetos integrados para que los usemos, y estos tienen métodos, asi como console tiene el metodo log, tambien tenemos el objeto Math, con sus metodos pow, round, floor y ceil.
+
+ -Math.pow: devuelve un número elevado a un exponente, toma 2 numeros(a, b):
+
+    Math.pow(2,2) = 4;
+    Math.pow(3,2) = 9;
+    Math.pow(3,3) = 27;
+
+ -Math.round: redondea numero al mas cercano
+    
+    Math.round(6.5) = 7;
+    Math.round(6.45) = 6;
+
+ -Math.Floor: redondea al NUMERO ENTERO más cercano HACIA   ABAJO.
+
+    Math.floor(6.999) = 6;
+
+ -Math.Ceil: redondea al NUMERO ENTERO más cercano HACIA   ARRIBA
+ 
+    Math.ceil(6.0001) = 7; 
+
+ .lenght:
+   -es un método de los tipos de datos "string", devuelve     la cantidad de caracteres de esa cadena.
+
+     var nombreGato = 'felix';
+     console.log(nombreGato.length); // 5
+
