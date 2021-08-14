@@ -1,0 +1,18 @@
+h1{
+    display: flex;
+    justify-content: center;
+    
+}
+body{
+    background-color: red
+}
+div{
+    background-color: whitesmoke;
+    margin: 50px    ;
+}
+   
+ img{
+    position: absolute;
+    right: 100px;
+    width: 200px;
+}
